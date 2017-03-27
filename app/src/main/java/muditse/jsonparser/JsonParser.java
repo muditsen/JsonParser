@@ -76,19 +76,19 @@ public class JsonParser {
     private static boolean isPrimitiveType(String type) {
         if (type.equalsIgnoreCase("int")) {
             return true;
-        } else if (type.equalsIgnoreCase("float")) {
+        } else if (type.equalsIgnoreCase("float") || type.equalsIgnoreCase("java.lang.Float")) {
             return true;
-        } else if (type.equalsIgnoreCase("double")) {
+        } else if (type.equalsIgnoreCase("double") || type.equalsIgnoreCase("java.lang.Double")) {
             return true;
-        } else if (type.equalsIgnoreCase("short")) {
+        } else if (type.equalsIgnoreCase("short") || type.equalsIgnoreCase("java.lang.Short")) {
             return true;
-        } else if (type.equalsIgnoreCase("boolean")) {
+        } else if (type.equalsIgnoreCase("boolean") || type.equalsIgnoreCase("java.lang.Boolean")) {
             return true;
-        } else if (type.equalsIgnoreCase("byte")) {
+        } else if (type.equalsIgnoreCase("byte") || type.equalsIgnoreCase("java.lang.Byte")) {
             return true;
-        } else if (type.equalsIgnoreCase("long")) {
+        } else if (type.equalsIgnoreCase("long") || type.equalsIgnoreCase("java.lang.Long")) {
             return true;
-        } else if (type.equalsIgnoreCase("char")) {
+        } else if (type.equalsIgnoreCase("char") || type.equalsIgnoreCase("java.lang.Char")) {
             return true;
         }
         return false;
