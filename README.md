@@ -52,7 +52,8 @@ Then create a model file for Product
 ```
     And another model file for Extra info
 
-```public static class Extra {
+```
+    public static class Extra {
 
         public Extra() {
 
