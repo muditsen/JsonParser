@@ -49,12 +49,12 @@ Then create a model file for Product
             return "the name is " + name + " & " + price + " " + extra.toString();
         }
     }
+
 ```
-    And another model file for Extra info
+And another model file for Extra info
 
 ```
     public static class Extra {
-
         public Extra() {
 
         }
@@ -70,18 +70,14 @@ Then create a model file for Product
             return type + " " + rating;
         }
     }
- ```
+```
+In your MainActivity.java file
+    
+```
+JsonParser.parse(productBean, jsonObject);
+```
+and you re done.
 
-
-    In your MainActivity.java file
-    ```
-    JsonParser.parse(productBean, jsonObject);
-
-    ```
-
-    and you re done.
-
-
-    Note: The functionality is same as the library of Gson.
+Note: The functionality is same as the library of Gson.
 
 
