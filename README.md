@@ -68,12 +68,15 @@ Then create a model file for Product
         public String toString() {
             return type + " " + rating;
         }
-    }```
+    }
+ ```
 
 
     In your MainActivity.java file
-
+    ```
     JsonParser.parse(productBean, jsonObject);
+
+    ```
 
     and you re done.
 
