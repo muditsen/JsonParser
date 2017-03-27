@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JSONParser.iml" filepath="$PROJECT_DIR$/JSONParser.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonparser2/jsonparser2.iml" filepath="$PROJECT_DIR$/jsonparser2/jsonparser2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonparser2/jsonparser2.iml" filepath="$PROJECT_DIR$/jsonparser2/jsonparser2.iml" />
     </modules>
   </component>
 </project>
