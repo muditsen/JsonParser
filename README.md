@@ -51,10 +51,7 @@ Then create a model file for Product
     }
 
 ```
-<<<<<<< HEAD
 
-=======
->>>>>>> 18764d096b5e8a8463c20aef27c680451eb08807
 And another model file for Extra info
 
 ```
@@ -74,7 +71,6 @@ And another model file for Extra info
             return type + " " + rating;
         }
     }
-<<<<<<< HEAD
  ```
 
 
@@ -86,18 +82,12 @@ In your MainActivity.java file
     //OR
     
     JsonParser.parse(ProductBean.class, jsonObject);
-
-```
-
-=======
 ```
 In your MainActivity.java file
     
 ```
 JsonParser.parse(productBean, jsonObject);
 ```
->>>>>>> 18764d096b5e8a8463c20aef27c680451eb08807
-and you re done.
 
 Note: The functionality is same as the library of Gson.
 
