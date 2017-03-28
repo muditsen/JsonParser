@@ -50,7 +50,8 @@ Then create a model file for Product
         }
     }
 ```
-    And another model file for Extra info
+
+And another model file for Extra info
 
 ```
     public static class Extra {
@@ -73,15 +74,19 @@ Then create a model file for Product
  ```
 
 
-    In your MainActivity.java file
-    ```
+In your MainActivity.java file
+    
+```
     JsonParser.parse(productBean, jsonObject);
+    
+    //OR
+    
+    JsonParser.parse(ProductBean.class, jsonObject);
 
-    ```
+```
 
-    and you re done.
+and you re done.
 
-
-    Note: The functionality is same as the library of Gson.
+Note: The functionality is same as the library of Gson.
 
 

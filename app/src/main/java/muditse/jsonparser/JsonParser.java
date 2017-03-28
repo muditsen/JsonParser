@@ -38,6 +38,19 @@ public class JsonParser {
         }
     }
 
+    public static Object parse(Class clazz, JSONObject fromJsonObject) {
+        try {
+            Object o = clazz.newInstance();
+            parse(o, fromJsonObject);
+            return o;
+        } catch (InstantiationException e) {
+            Log.e("Error", "Unable to instantiate the field " + e.toString());
+        } catch (IllegalAccessException e) {
+            Log.e("Error", "Unable to access the field " + e.toString());
+        }
+        return null;
+    }
+
 
     public static JSONObject getJsonObjectFrom(Object object) {
         JSONObject jsonObject = new JSONObject();
