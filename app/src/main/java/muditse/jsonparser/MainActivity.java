@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e("muditLog", productBean.toString());
 
 
+
     }
 
     @JsonKey("product")
