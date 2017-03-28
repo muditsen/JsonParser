@@ -33,10 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         Log.e("muditLog", JsonParser.getJsonObjectFrom(productBean).toString());
 
-        JsonParser.parse(ProductBean.class, jsonObject);
+        productBean = (ProductBean) JsonParser.parse(ProductBean.class, jsonObject);
 
         Log.e("muditLog", productBean.toString());
-
 
 
     }
